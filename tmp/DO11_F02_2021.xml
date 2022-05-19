@@ -1,0 +1,1867 @@
+<?xml version = '1.0' encoding = 'windows-1251'?>
+<?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+   <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+      <Author>excel.xslt (38) (18.10.2018) by AVC</Author>
+      <LastAuthor>AVC</LastAuthor>
+   </DocumentProperties>
+   <Styles>
+      <Style ss:ID="Default" ss:Name="Normal">
+         <Alignment ss:Vertical="Center"/>
+         <Borders/>
+         <Font ss:FontName="Courier New" x:CharSet="204"/>
+         <Interior/>
+         <NumberFormat/>
+         <Protection/>
+      </Style>
+      <Style ss:ID="title">
+         <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+         <Font ss:FontName="Arial Cyr" x:CharSet="204" ss:Color="#0000FF" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="comment">
+         <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+         <Font ss:FontName="Arial Cyr" x:CharSet="204" ss:Color="#FF00FF"/>
+      </Style>
+      <Style ss:ID="header">
+         <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         <Borders>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Font ss:FontName="Times New Roman" x:CharSet="204" ss:Color="#000000" ss:Bold="1" ss:Size="9"/>
+      </Style>
+      <Style ss:ID="headerV">
+         <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1" ss:Rotate="90"/>
+         <Borders>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Font ss:FontName="Times New Roman" x:CharSet="204" ss:Color="#000000" ss:Bold="1" ss:Size="9"/>
+      </Style>
+      <Style ss:ID="tableattr">
+         <Font ss:FontName="Arial Cyr" x:CharSet="204" ss:Color="#FF0000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="datetime">
+         <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+         <Font ss:FontName="Arial Cyr" x:CharSet="204" ss:Color="#008000"/>
+      </Style>
+      <Style ss:ID="side0">
+         <Alignment ss:Vertical="Center"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+         <Borders>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="side1">
+         <Alignment ss:Vertical="Center"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+         <Borders>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="DC5">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="DC6">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="DC8">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="DC9">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+      </Style>
+      <Style ss:ID="DC5b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+         </Borders>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000"/>
+      </Style>
+      <Style ss:ID="DC6b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000"/>
+      </Style>
+      <Style ss:ID="DC8b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000"/>
+      </Style>
+      <Style ss:ID="DC9b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000"/>
+      </Style>
+      <Style ss:ID="iside0">
+         <Alignment ss:Vertical="Center"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+         <Borders>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+      </Style>
+      <Style ss:ID="iside1">
+         <Alignment ss:Vertical="Center"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+         <Borders>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+      </Style>
+      <Style ss:ID="iDC5">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC6">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC8">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC9">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#000000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC5b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC6b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC8b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC9b">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#FF0000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC5g">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#0000FF" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC6g">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#0000FF" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC8g">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#0000FF" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="iDC9g">
+         <Alignment ss:Vertical="Bottom" ss:Horisontal="Right"/>
+         <Borders>
+            <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+            <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+         </Borders>
+         <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+         <Font ss:FontName="Courier New" x:CharSet="204" ss:Color="#0000FF" ss:Bold="1"/>
+      </Style>
+   </Styles>
+   <ss:Worksheet ss:Name="Стр_1">
+      <ss:Table>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Column ss:AutoFitWidth="0" ss:Width="60"/>
+         <ss:Row>
+            <ss:Cell ss:StyleID="datetime" ss:Index="2">
+               <ss:Data ss:Type="String">19/05/2021 </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="datetime" ss:Index="14">
+               <ss:Data ss:Type="String">ГВЦ ОАО РЖД </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="datetime" ss:Index="27">
+               <ss:Data ss:Type="String">1:31 </ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="title" ss:Index="14">
+               <ss:Data ss:Type="String">ОТЧЕТ О ВЫПОЛНЕНИИ РАСПИСАНИЯ ДВИЖЕНИЯ</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="title" ss:Index="14">
+               <ss:Data ss:Type="String">ПРИГОРОДНЫХ ПОЕЗДОВ ПО ПУНКТАМ</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="title" ss:Index="14">
+               <ss:Data ss:Type="String">ПОСАДКИ (ВЫСАДКИ) ПАССАЖИРОВ</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="title" ss:Index="14">
+               <ss:Data ss:Type="String">   </ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="title" ss:Index="14">
+               <ss:Data ss:Type="String"> с 01.05.2021  по 18.05.2021 </ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="tableattr" ss:Index="2">
+               <ss:Data ss:Type="String">ДО-11-F02 </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="tableattr" ss:Index="27">
+               <ss:Data ss:Type="String">Страница 1</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row ss:AutoFitHeight="0" ss:Height="56">
+            <ss:Cell ss:StyleID="headerV" ss:Index="1" ss:MergeAcross="0" ss:MergeDown="1">
+               <ss:Data ss:Type="String">Железные дороги</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="header" ss:Index="2" ss:MergeAcross="5" ss:MergeDown="0">
+               <ss:Data ss:Type="String">Отправление поездов с пунктов&#10;отправления&#10;   </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="header" ss:Index="8" ss:MergeAcross="3" ss:MergeDown="0">
+               <ss:Data ss:Type="String">Прибытие&#10;поездов на промежуточные&#10;пункты&#10;   </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="header" ss:Index="12" ss:MergeAcross="3" ss:MergeDown="0">
+               <ss:Data ss:Type="String">Отправление&#10;поездов c промежуточных&#10;пунктов&#10;   </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="header" ss:Index="16" ss:MergeAcross="5" ss:MergeDown="0">
+               <ss:Data ss:Type="String">Прибытие поездов на пункты назначения&#10;   </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="header" ss:Index="22" ss:MergeAcross="5" ss:MergeDown="0">
+               <ss:Data ss:Type="String">Общие характеристики выполнения&#10;расписания&#10;   </ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row ss:AutoFitHeight="0" ss:Height="90">
+            <ss:Cell ss:StyleID="headerV" ss:Index="2" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее количество&#10;фактов</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="3" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">из них не по&#10;расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="4" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">в т.ч. с опозданием </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="5" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">в т.ч. не отправившихся с&#10;пунктов отправления</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="6" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">процент выполнения расписания </ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="7" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее время отклонения от&#10;расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="8" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее количество фактов</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="9" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">из них не по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="10" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">процент прибытия на &#10;промежуточные пункты&#10;по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="11" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее время отклонения от&#10;расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="12" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее количество фактов</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="13" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">из них не по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="14" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">процент отправления&#10;с промежуточных пунктов&#10;по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="15" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее время отклонения от&#10;расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="16" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее количество фактов</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="17" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">из них не по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="18" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">в т.ч. с опозданием</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="19" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">в т.ч. не прибывших&#10;на пункты назначения</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="20" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">процент выполнения расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="21" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общее время отклонения от&#10;расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="22" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">всего фактов прибытия&#10;(отправления)</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="23" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">из них не по расписанию</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="24" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">общий процент выполнения&#10;расписания</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="25" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">количество отмененных поездов*</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="26" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">количество частично&#10;отмененных поездов*</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="headerV" ss:Index="27" ss:MergeAcross="0" ss:MergeDown="0">
+               <ss:Data ss:Type="String">количество поездов,&#10;отправленных без&#10;нормативного графика</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ОКТ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">17221</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">100</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">84</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.42</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">30.33</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">102769</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1536</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.51</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">389.42</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">103310</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1969</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.09</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">476.64</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">17221</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">265</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">247</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">15</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.46</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">80.24</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">240521</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3870</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.39</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">8</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">26</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">КЛГ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1454</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">100</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5014</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">100</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5014</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">100</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1454</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.86</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0.52</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">12936</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.98</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">МСК</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">49418</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">494</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">394</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">95</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">133.83</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">378564</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5886</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.45</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1610.77</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">377541</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">7434</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.03</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1861.17</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">49422</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">887</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">779</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.21</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">260.12</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">854945</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">14701</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.28</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">74</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">45</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">23</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ГОР</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">9765</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.62</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">19.23</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">51478</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">334</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.35</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">164.46</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">51477</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">508</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.01</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">198.09</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">9775</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">57</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">56</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.42</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">30.02</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">122495</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">936</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.24</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">СЕВ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3149</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">9</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.65</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3.4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">23938</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">126</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.47</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">48.43</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">23937</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">154</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.36</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">58.12</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3132</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.49</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">8.77</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">54156</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">307</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.43</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">СКВ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6718</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.84</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3.58</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">40175</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">132</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.67</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">52.98</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">40176</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">176</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.56</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">63.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6717</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">23</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">22</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.66</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">9.07</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">93786</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">342</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.64</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">91</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ЮВС</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3176</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">8</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">8</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.75</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1.87</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16201</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">50</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.69</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">14.43</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16201</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">87</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.46</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">20.72</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3176</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">18</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.43</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5.78</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">38754</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">163</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.58</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ПРВ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1992</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.45</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5.13</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">14695</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.34</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">54.63</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">14694</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">121</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.18</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">61.65</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1992</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">17</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.15</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">8.95</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">33373</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">246</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.26</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">КБШ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2874</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">9</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.69</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0.78</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">25404</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">188</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.26</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">59.68</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">25404</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">219</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.14</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">67.64</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2873</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">24</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">20</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.16</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">56555</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">440</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.22</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">4</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">СВР</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6194</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10.63</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">46992</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">653</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.61</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">222.02</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">46991</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">937</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.01</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">272.92</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">6213</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">109</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">109</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.25</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">37.75</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">106390</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1736</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">98.37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">4</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ЮУР</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1812</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.94</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0.2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13880</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">73</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.47</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">18.37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13880</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">23.47</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1795</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.39</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2.07</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">31367</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">182</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.42</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ЗСБ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5705</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.93</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">34272</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">107</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.69</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">35.57</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">34273</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">132</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.61</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">39.81</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5705</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">36</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">36</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10.05</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">79955</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">279</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.65</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">8</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">КРС</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1737</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.71</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">7511</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">35</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.53</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16.75</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">7512</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">41</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.45</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">18.49</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1739</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.42</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">4.48</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">18499</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">91</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.51</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ВСБ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1815</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">11</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.28</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3.48</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16187</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">338</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97.91</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">161.49</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">16180</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">360</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97.78</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">177.28</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1817</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">52</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">50</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97.14</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">32.13</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">35999</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">763</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">97.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">2</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">1</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ЗАБ</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">958</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.48</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1.58</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5638</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">325</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">94.24</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">102.28</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">5637</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">384</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">93.19</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">115.9</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">954</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">73</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">73</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">92.35</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">23.15</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13187</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">787</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">94.03</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="side1">
+               <ss:Data ss:Type="String">ДВС</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1984</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">3</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.85</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0.6</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13437</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">82</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.39</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">20.62</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">13435</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">100</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.26</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">24.27</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">1983</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">10</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.5</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">4.39</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">30839</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">195</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">99.37</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC8">
+               <ss:Data ss:Type="Number">0</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="DC9">
+               <ss:Data ss:Type="Number">5</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="iside1">
+               <ss:Data ss:Type="String">РЖД</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">115972</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">749</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">625</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">115</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">99.35</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">219.43</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">796155</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">9962</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">98.75</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">2971.88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">795662</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">12719</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">98.4</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">3480.03</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">115968</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">1610</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">1470</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">121</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">98.61</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">524.36</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">1823757</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">25040</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">98.63</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">88</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC8">
+               <ss:Data ss:Type="Number">61</ss:Data>
+            </ss:Cell>
+            <ss:Cell ss:StyleID="iDC9">
+               <ss:Data ss:Type="Number">164</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+<ss:Row>
+            <ss:Cell ss:StyleID="comment" ss:Index="2">
+               <ss:Data ss:Type="String">* изменения внесены менее,чем за сутки до отправления поезда</ss:Data>
+            </ss:Cell>
+         </ss:Row>
+         <ss:Row>
+            <ss:Cell ss:StyleID="comment" ss:Index="2">
+               <ss:Data ss:Type="String"/>
+            </ss:Cell>
+         </ss:Row>
+      </ss:Table>
+      <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+         <Selected/>
+         <FreezePanes/>
+         <SplitHorizontal>9</SplitHorizontal>
+         <TopRowBottomPane>9</TopRowBottomPane>
+         <SplitVertical>1</SplitVertical>
+         <LeftColumnRightPane>1</LeftColumnRightPane>
+         <ActivePane>0</ActivePane>
+         <Panes>
+            <Pane>
+               <Number>3</Number>
+            </Pane>
+            <Pane>
+               <Number>1</Number>
+            </Pane>
+            <Pane>
+               <Number>2</Number>
+            </Pane>
+            <Pane>
+               <Number>0</Number>
+               <ActiveRow>0</ActiveRow>
+               <ActiveCol>0</ActiveCol>
+            </Pane>
+         </Panes>
+      </WorksheetOptions>
+   </ss:Worksheet>
+</Workbook>
